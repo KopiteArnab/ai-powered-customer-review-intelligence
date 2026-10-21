@@ -1,0 +1,2 @@
+model,threshold_selected_on_validation,negative_precision,negative_recall,negative_f1,negative_f2,average_precision,balanced_accuracy,test_negative_prevalence
+TF-IDF + balanced Logistic Regression (negative vs non-negative),0.45638056644861674,0.6048689138576779,0.8590425531914894,0.7098901098901099,0.7924435721295388,0.8585986183847291,0.9107956819915558,0.06256239600665557

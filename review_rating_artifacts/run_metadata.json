@@ -1,0 +1,32 @@
+{
+  "random_seed": 42,
+  "dataset_rows_after_cleaning": 30000,
+  "train_rows": 23990,
+  "test_rows": 6010,
+  "target": "reviews_rating",
+  "input_text": "reviews_title + reviews_text",
+  "split_strategy": "StratifiedGroupKFold grouped by normalized review body",
+  "duplicate_group_overlap": 0,
+  "negative_review_definition": "reviews_rating <= 2",
+  "negative_review_threshold": 0.45638056644861674,
+  "negative_review_threshold_selection": "maximum validation F2; duplicate-group-aware fit/validation split",
+  "negative_review_validation_metrics": {
+    "selected_threshold": 0.45638056644861674,
+    "selection_method": "Selected by maximum validation F2 (beta=2; recall-weighted)",
+    "validation_precision": 0.6288416075650118,
+    "validation_recall": 0.8498402555910544,
+    "validation_f2": 0.7940298507462686,
+    "validation_average_precision": 0.8222480639729407,
+    "fit_rows_for_threshold_selection": 19201,
+    "validation_rows": 4789,
+    "duplicate_groups_shared_fit_validation": 0
+  },
+  "rating_values": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "notes": "LLM evaluation is optional and may use a smaller sample than traditional models."
+}

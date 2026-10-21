@@ -1,0 +1,5 @@
+model,evaluation_set,n_evaluated,accuracy,balanced_accuracy,macro_f1,weighted_f1
+Majority-class baseline,full held-out test,6010,0.6848585690515807,0.2,0.16259134900256764,0.5567603930903232
+TF-IDF + balanced Logistic Regression,full held-out test,6010,0.6990016638935108,0.5542483892655518,0.5288612925227982,0.7110163291913904
+TF-IDF + cumulative ordinal Logistic Regression,full held-out test,6010,0.7387687188019967,0.5070658057215335,0.48011233429792083,0.71683156164032
+Hugging Face zero-shot (facebook/bart-large-mnli),zero-shot sample (not full test),200,0.145,0.42003008811519454,0.23147329272844797,0.12880888618796602
